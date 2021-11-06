@@ -48,8 +48,6 @@ unset title
 set xlabel "t(s)" offset 0,-1 font "Menlo,20"
 set ylabel "{/Symbol D}{/Symbol q}(Rad)" offset -8,0 font "Menlo,20"
 set logscale y exp(1)
-a = 0.002
-lambda = 0.004
 f(x) = a*exp(lambda*x)
 fit [0:50] f(x) 'peaksFit_0.5.txt' using 1:2 via a,lambda
 set key font "Menlo,15"

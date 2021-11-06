@@ -11,8 +11,8 @@
 #define freq .2/.3  // freq -> driving force frequency 
 #define offSet 0.001 // Initial angular off set between the two pendulums
 
-#define output1 "peaksFit_0.5.txt" //name of files to store solution data
-#define output2 "pendulum_0.5.txt"
+#define output1 "pendulum_0.5.txt"
+#define output2 "peaksFit_0.5.txt" //name of files to store solution data
 
 extern double x[2*MAX], dx[MAX]; // Arrays to hold angles x[] and the difference of the two angles dx[x]
 
