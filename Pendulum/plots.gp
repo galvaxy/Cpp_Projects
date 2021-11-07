@@ -1,4 +1,6 @@
 set terminal qt 0
+set terminal jpeg
+set output "chaosFit.jpeg"
 set termoption enhanced
 set size square
 set xrange [0:200]
@@ -22,6 +24,8 @@ f(x) ti "Fit Line" lc rgb "blue", \
 'peaksFit_1.2.txt' using 1:2ti "Peaks" lc rgb "red"
 
 set terminal qt 1
+set terminal jpeg
+set output "chaosPlot.jpeg"
 set size square
 set xrange [0:200]
 set yrange[-4:4.5]
@@ -39,6 +43,8 @@ plot [0:200]'pendulum_1.2.txt' using 1:2 ti "Pendulum 1" lc rgb 'black' lt 0 lw 
 'pendulum_1.2.txt' using 1:3 ti  "Pendulum 2" lc rgb 'red' lt 0 lw 2
 
 set terminal qt 2
+set terminal jpeg
+set output "linearFit.jpeg"
 set size square
 set xrange [0:50]
 set yrange[2e-9:0.0021]
@@ -59,6 +65,8 @@ f(x) ti "Fit Line" lc rgb "blue", \
 'peaksFit_0.5.txt' using 1:2ti "Peaks" lc rgb "red"
 
 set terminal qt 3
+set terminal jpeg
+set output "linearPlot.jpeg"
 set size square
 set xrange [0:200]
 set yrange[-1:1.3]
