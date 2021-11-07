@@ -1,10 +1,12 @@
+set terminal jpeg
+set output "prismVoltage.jpeg"
 set size square
 set xrange [0:82]
 set yrange [0:82]
 set zrange [0:1]
 set grid lt 0 lw 1
-set xlabel "x" font "Menlo,15"
-set ylabel "y" font "Menlo,15"
+set xlabel offset 0,-1,0 "x" font "Menlo,15"
+set ylabel offset 0,-1,0 "y" font "Menlo,15"
 set zlabel "V" offset -2,-2,0 font "Menlo,15"
 set xtics 10 font "Menlo,15"
 set ytics 10 font "Menlo,15"
