@@ -9,4 +9,4 @@ set ylabel "y" font "Menlo,15"
 set xtics 0.1 font "Menlo,15"
 set ytics  0.5 font "Menlo,15"
 set key font "Menlo,15"
-do for[i=1:200]{plot 'freeEndWave.txt' index i using 1:2 ti "Free End Wave" lt 0 lw 5 lc rgb "black"}
+do for[i=1:200]{plot 'freeEndWave.txt' index i ti "Free End Wave" lt 0 lw 2 lc rgb "black"}

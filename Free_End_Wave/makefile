@@ -11,4 +11,4 @@ calculate.o: calculate.cpp
 	g++ -c calculate.cpp -std=c++11
 
 clean:
-	rm *.o free_end_wave animation 
+	rm *.o free_end_wave 

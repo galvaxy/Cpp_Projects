@@ -14,7 +14,7 @@ void calculate()
 
     for(j = 0; j < 2; j++) //print the initial wave profile because that information (stored in an array) will be replaced in the net loop
     {
-        for(i = 0; i <= MAXi; i++)
+        for(i = 0; i < MAXi; i++)
         {
             stream<<i*dx<<"\t"<<y[i][j]<<"\n";
         }
