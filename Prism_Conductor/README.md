@@ -1,0 +1,8 @@
+PRISM CONDUCTOR:
+
+ This program calculates the electric potential of a capacitor constructed out of a solid square shaped conductor inside of a hollow square shaped boundary plate. The solid inner conductor has a voltage of +1 while the outer plate has a voltage of 0. The initialization of the two conductors is set in initialize.cpp. The dimensions of the capacitor are such that the ratio of the lengths of the sides of the inner conductor and outer plate is 1/3. The inner conductor is placed such that its center is aligned with the center of the outer plate and their sides are parallel. 
+
+ The system is descretized with a grid seperated with unit lenghts. To calculate the potential at a given location, the voltage is set equal to the average of the voltages of its nearest neighbors. The calculations for a given iteration are found in calculate.cpp. This averaging process goes through many iterations untill the cumulative change in the voltage compared to the previous iteration converges to a specified threshold. The threshold can be set in check_save.cpp which saves the final results to the prismConductor.txt file. 
+
+ The plots.gp is a GnuPlot script which can be run using GnuPlot in the terminal to view the plots of the results. A 3-D plot is made which shows the voltage as a function of the (x,y) position. It can be seen that the inner square region is held constant at V=1 and the outer boundary is held fixed at V=0. The intermediate region increases smoothly from V=0 to V=1.  
+ 
