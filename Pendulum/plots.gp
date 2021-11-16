@@ -8,7 +8,7 @@ set format y "10^{%T}"
 set style data linespoints 
 unset title
 set xlabel "t(s)" offset 0,-1 font "Menlo,20"
-set ylabel "{/Symbol D} {/Symbol q}(Rad)" offset -2,0 font "Menlo,20"
+set ylabel "ΔΘ(Rad)" offset -2,0 font "Menlo,20"
 set logscale y exp(1)
 a = 0.002
 lambda = 0.004
@@ -32,7 +32,7 @@ unset format
 set style data linespoints 
 set title "Driving Force Fd=1.2" font "Menlo,20"
 set xlabel "t(s)" offset 0,-1 font "Menlo,20"
-set ylabel "{/Symbol q}(Rad)" offset -2,0 font "Menlo,20"
+set ylabel "ΔΘ(Rad)" offset -2,0 font "Menlo,20"
 unset logscale
 set key font "Menlo,15"
 set xtics 25 font "Menlo,15"
@@ -51,7 +51,7 @@ set format y "10^{%T}"
 set style data linespoints 
 unset title
 set xlabel "t(s)" offset 0,-1 font "Menlo,20"
-set ylabel "{/Symbol D}{/Symbol q}(Rad)" offset -2,0 font "Menlo,20"
+set ylabel "ΔΘ(Rad)" offset -2,0 font "Menlo,20"
 set logscale y exp(1)
 f(x) = a*exp(lambda*x)
 fit [0:50] f(x) 'peaksFit_0.5.txt' using 1:2 via a,lambda
@@ -73,7 +73,7 @@ unset format
 set style data linespoints 
 set title "Driving Force Fd=0.5" font "Menlo,20"
 set xlabel "t(s)" offset 0,-1 font "Menlo,20"
-set ylabel "{/Symbol q}(Rad)" offset -2,0 font "Menlo,20"
+set ylabel "Θ(Rad)" offset -2,0 font "Menlo,20"
 unset logscale
 set key font "Menlo,15"
 set xtics 25 font "Menlo,15"
