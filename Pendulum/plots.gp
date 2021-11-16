@@ -32,7 +32,7 @@ unset format
 set style data linespoints 
 set title "Driving Force Fd=1.2" font "Menlo,20"
 set xlabel "t(s)" offset 0,-1 font "Menlo,20"
-set ylabel "ΔΘ(Rad)" offset -2,0 font "Menlo,20"
+set ylabel "Θ(Rad)" offset -2,0 font "Menlo,20"
 unset logscale
 set key font "Menlo,15"
 set xtics 25 font "Menlo,15"
