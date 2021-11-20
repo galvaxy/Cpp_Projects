@@ -3,7 +3,7 @@ set style data linespoints
 set xrange [0:0.3]
 set yrange [0:60]
 set xlabel 'x' offset 0,-1 font "Menlo,15"
-set ylabel "Probability" offset -2,0 font "Menlo,18"
+set ylabel "Ψ^*Ψ" offset -2,0 font "Menlo,18"
 set xtics 0.05 font "Menlo,15"
 set ytics 5 font "Menlo,15"
 set key font "Menlo,15"
